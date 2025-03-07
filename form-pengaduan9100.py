@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pandas as pd
 from datetime import date, datetime
@@ -11,10 +12,12 @@ import pytz
 # Set Timezone
 tzInfo = pytz.timezone('Asia/Jayapura')
 
+
+# Ambil kredensial dari GitHub Secrets
+service_account_info = json.loads(os.getenv("API_KEY2"))
+
 # Setup Google Sheets API
-scope = ['https://spreadsheets.google.com/feeds',
-         'https://www.googleapis.com/auth/drive']
-creds = service_account.Credentials.from_service_account_file('isi-formpengaduan9100-44a5fb7650a2.json', scopes=scope)
+creds = service_account.Credentials.from_service_account_info(service_account_info)
 client = gspread.authorize(creds)
 
 # Buka Spreadsheet
