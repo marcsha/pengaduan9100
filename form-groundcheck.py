@@ -44,39 +44,19 @@ if __name__ == "__main__":
     #st.subheader(f"Tanggal: {hari}")
     #st.dataframe(df)
 
-    lstKecamatan = list(df["Nama Kecamatan"].unique())
-    lstKecamatan.insert(0, "PILIH KECAMATAN")
-              
-    FirstFilter = st.selectbox("Nama Kecamatan", lstKecamatan, 0)
 
-    if FirstFilter != 'PILIH KECAMATAN':
+    nama = st.text_input('Nama Pelapor', )
+    email = st.text_input('Email', )
+    notelp = st.text_input('Nomor Telepon', )
+    domisili = st.text_input('Alamat Domisili', )
+    judul = st.text_input('Judul Laporan', )
+    kategori = st.selectbox("Kategori ", ["-PILIH-", "Peraturan","Pelayanan Terpadu","Pegawai","Birokrasi","Fasilitas","Fraud/Kecurangan","Pelayanan Umum","Gratifikasi","Benturan Kepentingan", "Lainnya"], 0)
+    isi = st.text_input('Isi Laporan', )
+    bukti = st.text_input('Bukti Pengaduan', )
 
-        df2 = df[df["Nama Kecamatan"] == FirstFilter]  
-
-        lstDesa = list(df2["Nama Desa"].unique())
-        lstDesa.insert(0, "PILIH DESA")
-
-        SecondFilter = st.selectbox("Nama Desa", lstDesa, 0)
-
-        if SecondFilter != 'PILIH DESA':
-
-            df3 = df2[df2["Nama Desa"] == SecondFilter]
-
-            lstSLS = list(df3["Nama SLS"].unique())
-            lstSLS.insert(0, "PILIH SLS")
-
-            ThirdFilter = st.selectbox("Nama SLS", lstSLS, 0)
-
-            if ThirdFilter != "PILIH SLS":
-
-                JumlahL2 = st.text_input('Jumlah L2 yang didata hasil Groundcheck', )
-
-                SudahSelesai = st.selectbox("Apakah Sudah Selesai Groundcheck6 ", ["PILIH", "Sudah", "Belum"], 0)
-
-
-                if ((SudahSelesai == "Sudah") and (len(JumlahL2) != 0)):
-                    if st.button('Submit'):
-                        st.success(f'Data berhasil tersubmit', icon="✅")
-                        worksheet1.append_row([datetime.datetime.now(tz=tzInfo).isoformat(), FirstFilter, SecondFilter, ThirdFilter, JumlahL2])
-                        time.sleep(3)
-                        streamlit_js_eval(js_expressions="parent.window.location.reload()")
+if st.button('Submit'):
+         st.success(f'Data berhasil tersubmit', icon="✅")
+         worksheet1.append_row([datetime.datetime.now(tz=tzInfo).isoformat(), FirstFilter, SecondFilter, ThirdFilter, JumlahL2])
+         time.sleep(3)
+         streamlit_js_eval(js_expressions="parent.window.location.reload()")
+         
