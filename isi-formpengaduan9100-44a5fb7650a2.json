@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "isi-formpengaduan9100",
+  "private_key_id": "44a5fb7650a2b11ec5d8259b8d5d49f6730e7009",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCojSMvp9FKplDh\nkTanrAkc6ULmqoA5uWCnZ2Y8c22sIQ/1zWqBF4C0gNAOCZJUvkS1KJXubFQNxuNx\nX6bbyU3AAEgxYj+Lo9G5Ni1XTF5txKpVOZd+iGJNGKpAAB53cJrWjgRvaKiCw/tu\n/YD7xoIr+jRcxTWf3TVENtU3GfLRU58U9am8OzIyB0hMpPsbytVGe8E7nAxn3K/k\na+fFkuPt9zo8IcUAVzd8A3STRFkWQTjcDJYiBmERAo4eTq611pFJWjpGQnXlNSoH\nS2zT/M7nCPZ63VJ6qxT3y7Buz2c/lMy6tTHaSiodTSuF0D/BFMjBMieXE4t9B0XT\nwxd826x3AgMBAAECggEAKUx7xJ9//qSFyN9F3wueKAFXrSE1ze8IKbyCJmm6A6UO\nPhIY+IyDsralQ+tAeZctSp4pLoRIjB+hdxQS1GOcs2DeT4tdOp/nMVR/A5boxEid\n28gCwLQ2MeHLRWdCD839gnjFyW6Ba5kNsIJY6lgXaSMjVV/U5djTxmURFTE8d+F5\nJ2pCbkzTs/KiVx9AevKhC8Ep606Bt9rWewCsKkrTWTjQ6ysQt0WQflDcpuds8MNA\nW5iTqqE9pO+5QOZsXsZUOgO+4wLzuIn4Rdlx9RiZM4vzSLrYDP3Xk8RX4KDbQwHn\n1zUi6DSvlmIJmnrejtboVDFqDJmT3UIyEy+W3f614QKBgQDkSWKvzy7tLaTCTRKy\n996XhrfYK7ZVcnbQRCfqnOzjSfPvR/S/DCl//gfEXtbq5sqZ0VLlAUFGQzjKoxr+\n0UusSWOaNQdBB40dhuJ0MeP0Zsy0j3AxG2ZfMjXUMYPtSqTb7ZgxRx0r7L2cYPo3\nLx9QSysof2mUn1swEmCzF6B+qQKBgQC9A1FD0zu+1cvdbeXjmwZ7cHcjTrPtQII+\nzbbhuQmE/fzyD2/zU/R0wouA5F1Mo9ajptELBdhTnntTLKTTGx4WxBW65uQuqBBM\nRfhsHCRLl7dBHJcLwdMpGp9V7UDUKPQ7Q/Z76hE5ksVRBljWtSLKpDtg8gvXku8m\nBr0BwG1mHwKBgQDOCspOofHZ0juFv2ikLYIzQz2Fl5Z/Msu4F/vrDm3kiyfnDQwC\nryh5xD8gZvUVmO69vCdUWDihASUuB97ipObm/moukbQVZopgXxDfDPSQ74PNaDU7\nrV5Nh5T8CyDmuFtpwN1/hI74yTkt/n1390kNAHtYlv8lTFtSXRP4MNgD2QKBgGTv\nvpgP19oDZkkrhRbVFNMariTGxMMwLd3IEZ/dJr5EvK2vnMM+1E7+DW2ZhlGFNPxT\n+1J9npaZDZbPQn4R/zF9KXWUE8ruqTVyMEXbiW5s6Mn2sJrwuQk8VFaYyoQCEtsL\nYjeuOeCbBpBMaWjPdnLs3WDaIYTPzLJr6sdisYlVAoGBAJaQsmgDaYf0taAc5dWd\n6k4p0luX2aZJqZAqgwfVbJ3/oQZYcxopVr3daj1HkayqKuNDvR4TCG3rRMdTTnaE\nghkvIzMWnOychKWmVyFCLng+17rCfujfaemFSjjJ5Hqqb9DkoqgbhJiosTxuD3DS\nCVnDQ1e1CXfu0/txa3p9bC+M\n-----END PRIVATE KEY-----\n",
+  "client_email": "isi-formpengaduan9100@isi-formpengaduan9100.iam.gserviceaccount.com",
+  "client_id": "104272059274992638074",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/isi-formpengaduan9100%40isi-formpengaduan9100.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
