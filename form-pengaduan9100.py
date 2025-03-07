@@ -18,7 +18,7 @@ creds = service_account.Credentials.from_service_account_file('isi-formpengaduan
 client = gspread.authorize(creds)
 
 # Buka Spreadsheet
-sheet = client.open("db Groundcheck")
+sheet = client.open("Pengaduan9100")
 worksheet1 = sheet.worksheet('Sheet1')
 
 # Baca Google Spreadsheet
