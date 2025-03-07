@@ -12,14 +12,9 @@ import pytz
 # Set Timezone
 tzInfo = pytz.timezone('Asia/Jayapura')
 
-
-# Ambil kredensial dari GitHub Secrets
-service_account_info = json.loads(os.getenv("API_KEY2"))
-
 # Setup Google Sheets API
-scope = ['https://spreadsheets.google.com/feeds',
-         'https://www.googleapis.com/auth/drive']
-creds = service_account.Credentials.from_service_account_info(service_account_info)
+scopes = ["https://www.googleapis.com/auth/spreadsheets"]
+creds = service_account.Credentials.from_service_account_info(json.loads(st.secrets["API_KEY2"]), scopes=scopes)
 client = gspread.authorize(creds)
 
 # Buka Spreadsheet
