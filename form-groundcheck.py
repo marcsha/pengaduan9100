@@ -12,11 +12,11 @@ import datetime
 import json
 import pytz
 
-tzInfo = pytz.timezone('Asia/Hong_Kong')
+tzInfo = pytz.timezone('Asia/Jayapura')
 # Create a connection object.
 scope = ['https://spreadsheets.google.com/feeds',
          'https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name('st2023-tabanan-bd680f2e25f6.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('isi-formpengaduan9100-44a5fb7650a2.json', scope)
 client = gspread.authorize(creds)
 
 # Find a workbook by name and open the first sheet
@@ -25,7 +25,7 @@ sheet = client.open("db Groundcheck")
 worksheet1 = sheet.worksheet('Sheet1')
 
 ## Membaca db asal
-sheet_url = "https://docs.google.com/spreadsheets/d/1S_7EnNm3_kkF0og9Iecu0jZJ8oo60PlPHuzn0USlylg/edit#gid=0"
+sheet_url = "https://docs.google.com/spreadsheets/d/1dKKG4L40D-rQuWCKwymsRBkvALeq3KfgqqjEyDeOgkA/edit#gid=0"
 url_1 = sheet_url.replace('/edit#gid=', '/export?format=csv&gid=')
 
 df = pd.read_csv(url_1, header=0, on_bad_lines='skip')
@@ -34,7 +34,7 @@ hari = date.today()
 
          
 st.set_page_config(
-         page_title="Form Groundcheck",
+         page_title="Form Pengaduan",
          page_icon="📋"
 )
 
